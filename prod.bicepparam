@@ -1,12 +1,12 @@
 using './main.bicep'
 
-param wiz_auth_url = readEnvironmentVariable('WizAuthUrl', 'https://auth.app.wiz.io/oauth/token')
-param wiz_endpoint_url = readEnvironmentVariable('WizEndpointUrl', '')
-param wiz_client_id = readEnvironmentVariable('WizClientId', '')
-param wiz_client_secret = readEnvironmentVariable('WizClientSecret', '')
-param azure_loganalytics_workspace_id = readEnvironmentVariable('AzureLogAnalyticsWorkspaceId', '')
-param azure_loganalytics_workspace_sharedkey = readEnvironmentVariable('AzureLogAnalyticsWorkspaceSharedKey', '')
-param azure_loganalytics_resource_id = readEnvironmentVariable('AzureLogAnalyticsResourceId', '')
+param wiz_auth_url = readEnvironmentVariable('wiz_auth_url', 'https://auth.app.wiz.io/oauth/token')
+param wiz_endpoint_url = readEnvironmentVariable('wiz_endpoint_url', '')
+param wiz_client_id = readEnvironmentVariable('wiz_client_id', '')
+param wiz_client_secret = readEnvironmentVariable('wiz_client_secret', '')
+param azure_loganalytics_workspace_id = readEnvironmentVariable('azure_loganalytics_workspace_id', '')
+param azure_loganalytics_workspace_sharedkey = readEnvironmentVariable('azure_loganalytics_workspace_sharedkey', '')
+param azure_loganalytics_resource_id = readEnvironmentVariable('azure_loganalytics_resource_id', '')
 param enable_issues_sending = 'true'
 param enable_vulnerabilities_sending = 'true' 
 param enable_auditlogs_sending = 'true'
