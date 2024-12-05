@@ -36,4 +36,3 @@ jobs:
         template: ./main.bicep
         parameters: ./prod.bicepparam
         failOnStdErr: false
-        
