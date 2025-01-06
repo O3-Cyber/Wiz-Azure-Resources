@@ -7,13 +7,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      wiz_auth_url: ${{ secrets.WIZAUTHURL }}
-      wiz_endpoint_url:  ${{ secrets.WIZENDPOINTURL }}
-      wiz_client_id:  ${{ secrets.WIZCLIENTID }}
-      wiz_client_secret: ${{ secrets.WIZCLIENTSECRET }}
-      azure_loganalytics_workspace_id: ${{ secrets.AZURELOGANALYTICSWORKSPACEID }}
-      azure_loganalytics_workspace_sharedkey: ${{ secrets.AZURELOGANALYTICSWORKSPACESHAREDKEY }}
-      azure_loganalytics_resource_id: ${{ secrets.AZURELOGANALYTICSRESOURCEID }}
+      wiz_auth_url: ${{ secrets.WIZ_AUTH_URL }}
+      wiz_endpoint_url:  ${{ secrets.WIZ_ENDPOINT_URL }}
+      wiz_client_id:  ${{ secrets.WIZ_CLIENT_ID }}
+      wiz_client_secret: ${{ secrets.WIZ_CLIENT_SECRET }}
+      azure_loganalytics_workspace_id: ${{ secrets.AZURE_LOGANALYTICS_WORKSPACE_ID }}
+      azure_loganalytics_workspace_sharedkey: ${{ secrets.AZURE_LOGANALYTICS_WORKSPACE_SHAREDKEY }}
+      azure_loganalytics_resource_id: ${{ secrets.AZURE_LOGANALYTICS_RESOURCE_ID }}
       
     steps:
 
