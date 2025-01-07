@@ -146,6 +146,11 @@ module vault 'br/public:avm/res/key-vault/vault:0.10.2' = {
     // Non-required parameters
     enablePurgeProtection: false
     location: resourceGroup().location
+    publicNetworkAccess: 'Disabled'
+    networkAcls: {
+      defaultAction: 'Allow'
+      bypass: 'AzureServices'
+    }
     roleAssignments: [
       {
         principalId: userAssignedIdentity.outputs.principalId
