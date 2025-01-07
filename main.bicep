@@ -87,7 +87,7 @@ module appServicePlan 'br/public:avm/res/web/serverfarm:0.3.0' = {
   params: {
     name: 'funcAppPlan${uniqueString(resourceGroup().id)}'
     location: resourceGroup().location
-    skuName: 'Y1'
+    skuName: 'B1'
     kind: 'Linux'
   }
 }
